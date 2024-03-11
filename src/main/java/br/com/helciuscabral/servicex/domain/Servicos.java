@@ -5,29 +5,25 @@ import lombok.*;
 
 import java.util.List;
 
-@Data
-@Entity
-@Table (name = "SERVICOS")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
+@Table(name = "SERVICO")
 
 public class Servicos {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column (name = "ID_SERVICOS")
-    private Integer idServicos;
-    @Column (name = "NOME_SERVICOS")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_SERVICO")
+    private Integer idServico;
+    @Column(name = "NOME_SERVICO")
     private String nomeServico;
-    @Column (name = "VALOR_SERVICOS")
+    @Column(name = "VALOR_SERVICO")
     private Double valor;
     @ManyToOne
-    @JoinColumn (name = "idCategoria")
+    @JoinColumn(name = "idCategoria")
     private Categoria categoria;
-    @Column(name = "ORDEM_SERVICO")
-    @OneToMany(mappedBy = "servico")
-    private List<OrdemServico> ordemServicos;
 
 
 
