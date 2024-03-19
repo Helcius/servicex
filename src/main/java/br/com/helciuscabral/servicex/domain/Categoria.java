@@ -1,12 +1,11 @@
 package br.com.helciuscabral.servicex.domain;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -20,6 +19,6 @@ public class Categoria {
     private String nomeCategoria;
     @Column(name = "SERVICOS")
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
-    private List<Servicos> servicos;
+    private List<Servico> servicos;
 
 }
