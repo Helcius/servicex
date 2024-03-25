@@ -34,7 +34,6 @@ public class CategoriaResource {
         return categoriaService.buscarCategoria(idCategoria)
                 .map(categoria -> new ResponseEntity(categoria, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
-
     }
 
     @DeleteMapping("/{idCategoria}")
