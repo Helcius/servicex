@@ -1,7 +1,10 @@
 package br.com.helciuscabral.servicex.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -22,7 +25,9 @@ public class Servico {
     @ManyToOne
     @JoinColumn(name = "idCategoria")
     private Categoria categoria;
-
+    @JsonIgnore
+    @ManyToMany(mappedBy = "servicos")
+    private List<OrdemServico> ordemServicos;
 
 
 
