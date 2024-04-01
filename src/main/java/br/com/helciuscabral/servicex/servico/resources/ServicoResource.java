@@ -1,7 +1,7 @@
-package br.com.helciuscabral.servicex.resources;
+package br.com.helciuscabral.servicex.servico.resources;
 
-import br.com.helciuscabral.servicex.domain.Servico;
-import br.com.helciuscabral.servicex.service.ServicoService;
+import br.com.helciuscabral.servicex.servico.domain.Servico;
+import br.com.helciuscabral.servicex.servico.service.ServicoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

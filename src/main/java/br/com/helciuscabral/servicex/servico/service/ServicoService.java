@@ -1,7 +1,7 @@
-package br.com.helciuscabral.servicex.service;
+package br.com.helciuscabral.servicex.servico.service;
 
-import br.com.helciuscabral.servicex.domain.Servico;
-import br.com.helciuscabral.servicex.repository.ServicoRepository;
+import br.com.helciuscabral.servicex.servico.domain.Servico;
+import br.com.helciuscabral.servicex.servico.repository.ServicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

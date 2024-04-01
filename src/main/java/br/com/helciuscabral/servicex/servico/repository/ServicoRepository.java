@@ -1,6 +1,6 @@
-package br.com.helciuscabral.servicex.repository;
+package br.com.helciuscabral.servicex.servico.repository;
 
-import br.com.helciuscabral.servicex.domain.Servico;
+import br.com.helciuscabral.servicex.servico.domain.Servico;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

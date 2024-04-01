@@ -1,7 +1,7 @@
 //package br.com.helciuscabral.servicex.resources;
 //
-//import br.com.helciuscabral.servicex.domain.OrdemServico;
-//import br.com.helciuscabral.servicex.service.OrdemServicoService;
+//import br.com.helciuscabral.servicex.ordemservico.domain.OrdemServico;
+//import br.com.helciuscabral.servicex.ordemservico.service.OrdemServicoService;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.http.ResponseEntity;
 //import org.springframework.web.bind.annotation.PostMapping;
